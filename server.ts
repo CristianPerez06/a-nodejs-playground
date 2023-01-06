@@ -1,5 +1,6 @@
 import express from 'express'
 import baseRoutes from './routes/base'
+import filesRoutes from './routes/files'
 import dotenv from 'dotenv'
 import cors from 'cors'
 
@@ -13,6 +14,7 @@ app.use(express.json())
 
 // routes
 app.use('/api/', baseRoutes)
+app.use('/api/', filesRoutes)
 
 const envPort = process.env.PORT
 
