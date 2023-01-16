@@ -1,6 +1,6 @@
-# a-nodejs-exercises-list
+# a-nodejs-playground
 
-A list of useful exercises to learn or practice NodeJs .
+A NodeJS server with multiple examples of its main features.
 
 ## Tech stack
 
