@@ -3,6 +3,7 @@ import baseRoutes from './routes/base'
 import filesRoutes from './routes/files'
 import dotenv from 'dotenv'
 import cors from 'cors'
+import ErrorHandler from './middlewares/errorHandler'
 
 dotenv.config()
 
@@ -15,6 +16,9 @@ app.use(express.json())
 // routes
 app.use('/api/', baseRoutes)
 app.use('/api/', filesRoutes)
+
+// error handler
+app.use(ErrorHandler)
 
 const envPort = process.env.PORT
 
